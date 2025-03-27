@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Find Cars</title>
+</head>
+<body>
+    <h1>Car Details</h1>
+    <ul>
+      <li><strong>Make:</strong> <%= car.make %></li>
+      <li><strong>Model:</strong> <%= car.model %></li>
+      <li><strong>Year:</strong> <%= car.year %></li>
+      <% if(car.color) { %>
+        <li><strong>Color:</strong> <%= car.color %></li>
+      <% } %>
+      <% if(car.horsepower) { %>
+        <li><strong>Horsepower:</strong> <%= car.horsepower %> HP</li>
+      <% } %>
+    </ul>
+    <a href="/cars">Back to all cars</a>
+</body>
+</html>
